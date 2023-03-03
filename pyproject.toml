@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "changeme"
+version = "1"
+authors = [
+    {name = "Felix Hummel", email = "felix.hummel@hukudo.de"},
+]
+requires-python = ">=3.9"
+dependencies = [
+    "click",
+]
+
+[project.scripts]
+changeme = "changeme.cli:main"
+
+
+[project.optional-dependencies]
+dev = [
+    "cython",  # for pycharm debugger extensions
+    "pytest",
+    "black",
+    "ruff",
+    "mypy",
+]
+
+
+[tool.setuptools]
+packages = ["changeme"]
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+
+[tool.ruff]
+line-length = 120
+
