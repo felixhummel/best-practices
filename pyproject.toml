@@ -35,9 +35,8 @@ dev = [
 packages = ["changeme"]
 
 [tool.black]
-line-length = 120
+line-length = 79
 skip-string-normalization = true
 
 [tool.ruff]
-line-length = 120
-
+line-length = 79
