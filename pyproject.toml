@@ -19,11 +19,15 @@ changeme = "changeme.cli:main"
 
 [project.optional-dependencies]
 dev = [
-    "cython",  # for pycharm debugger extensions
-    "pytest",
     "black",
-    "ruff",
+    "bump2version",
+    "cython",  # for pycharm debugger extensions
     "mypy",
+    "pip-tools",
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist",
+    "ruff",
 ]
 
 
