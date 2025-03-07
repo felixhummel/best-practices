@@ -34,12 +34,11 @@ dev = [
 [tool.setuptools]
 packages = ["changeme"]
 
-[tool.black]
-line-length = 79
-skip-string-normalization = true
-
 [tool.ruff]
 line-length = 79
 
 [tool.ruff.format]
 quote-style = "single"
+
+[tool.pyright]
+typeCheckingMode = "basic"  # basedpyright less strict
