@@ -40,3 +40,6 @@ skip-string-normalization = true
 
 [tool.ruff]
 line-length = 79
+
+[tool.ruff.format]
+quote-style = "single"
