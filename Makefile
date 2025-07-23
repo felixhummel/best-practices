@@ -1,12 +1,12 @@
 MAKEFLAGS += --always-make
 
-default: ruff mypy test
+default: ruff ty test
 
 ruff:
-	ruff .
+	ruff check .
 
-mypy:
-	mypy .
+ty:
+	ty .
 
 test:
 	pytest --doctest-modules

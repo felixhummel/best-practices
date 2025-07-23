@@ -4,23 +4,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "changeme"
-version = "1"
-authors = [
-    {name = "Felix Hummel", email = "felix.hummel@hukudo.de"},
-]
-requires-python = ">=3.9"
-dependencies = [
-    "click",
-]
+version = "0.0.1"
+authors = [{ name = "Felix Hummel", email = "changeme@felixhummel.de" }]
+requires-python = ">=3.11"
+dependencies = ["click"]
 
 [project.scripts]
 changeme = "changeme.cli:main"
 
-
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
     "bump2version",
-    "cython",  # for pycharm debugger extensions
+    "cython",       # for pycharm debugger extensions
     "ipython",
     "mypy",
     "pip-tools",
@@ -28,11 +23,11 @@ dev = [
     "pytest-cov",
     "pytest-xdist",
     "ruff",
+    "ty",
 ]
 
-
-[tool.setuptools]
-packages = ["changeme"]
+# [project.optional-dependencies]
+# foo = []
 
 [tool.ruff]
 line-length = 79
@@ -41,4 +36,4 @@ line-length = 79
 quote-style = "single"
 
 [tool.pyright]
-typeCheckingMode = "basic"  # basedpyright less strict
+typeCheckingMode = "basic" # basedpyright less strict
