@@ -14,14 +14,12 @@ changeme = "changeme.cli:main"
 
 [dependency-groups]
 dev = [
-    "bump2version",
-    "cython",       # for pycharm debugger extensions
+    # "bump2version",
+    # "cython",       # for pycharm debugger extensions
     "ipython",
-    "mypy",
-    "pip-tools",
     "pytest",
     "pytest-cov",
-    "pytest-xdist",
+    # "pytest-xdist",
     "ruff",
     "ty",
 ]
