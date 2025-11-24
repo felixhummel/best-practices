@@ -2,7 +2,7 @@
 _.python.venv = { path = ".venv" }
 
 [tools]
-pre-commit = "latest"
+"ubi:j178/prek" = "latest"
 python = "3.12"
 taplo = "latest"
 uv = "latest"
