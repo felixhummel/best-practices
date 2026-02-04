@@ -8,3 +8,6 @@ ruff:
 
 test:
 	pytest --doctest-modules
+
+upgrade:
+	uv sync --upgrade --all-extras --all-groups

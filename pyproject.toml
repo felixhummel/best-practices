@@ -7,15 +7,15 @@ name = "changeme"
 version = "0.0.1"
 authors = [{ name = "Felix Hummel", email = "changeme@felixhummel.de" }]
 requires-python = ">=3.11"
-dependencies = ["click"]
+dependencies = []
 
-[project.scripts]
-changeme = "changeme.cli:main"
+# [project.scripts]
+# changeme = "changeme.cli:main"
 
 [dependency-groups]
 dev = [
     # "bump2version",
-    # "cython",       # for pycharm debugger extensions
+    "cython",     # for pycharm debugger extensions
     "ipython",
     "pytest",
     "pytest-cov",
