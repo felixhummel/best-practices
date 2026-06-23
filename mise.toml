@@ -3,6 +3,6 @@ _.python.venv = { path = ".venv" }
 # _.path = ["{{config_root}}/bin"]
 
 [tools]
-"ubi:j178/prek" = "latest"
+"github:j178/prek" = "latest"
 taplo = "latest"
 uv = "latest"
