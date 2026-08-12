@@ -16,3 +16,10 @@ indent_size = 4
 
 [{Makefile,Caddyfile}]
 indent_style = tab
+
+# https://github.com/mvdan/sh/blob/v3.12.0/cmd/shfmt/shfmt.1.scd
+# shfmt --write --indent 2 --case-indent --space-redirects bash/bash/3-prompt
+[[bash]]
+shell_variant = bash
+switch_case_indent = true
+space_redirects = true
