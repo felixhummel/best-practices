@@ -1,6 +1,9 @@
 MAKEFLAGS += --always-make
 
-default: ruff test
+default: prek ruff test
+
+prek:
+	prek run --all-files
 
 ruff:
 	ruff format .

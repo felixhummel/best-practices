@@ -13,3 +13,9 @@ repos:
       - id: ruff-check
         args: ['--fix', '.']
       - id: ruff-format
+  - repo: local
+    hooks:
+      - id: dprint
+        name: dprint fmt
+        entry: dprint fmt --allow-no-files
+        language: system
