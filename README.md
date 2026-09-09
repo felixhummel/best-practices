@@ -13,3 +13,8 @@ Further reading:
 - [simple config for scripts · Issue #665 · hynek/structlog](https://github.com/hynek/structlog/issues/665)
 - [structlog config with loglevel name](https://gist.github.com/felixhummel/fe3ae6244c2f271d8cc7bc8cb161b2fa)
 - [shebang mode is also incredibly useful and allows execution like ./script.sh #!/... | Hacker News](https://news.ycombinator.com/item?id=44642382)
+
+# prek
+https://prek.j178.dev/
+
+We use local hooks to use the same tools everywhere (managed by mise).

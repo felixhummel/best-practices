@@ -1,0 +1,21 @@
+exclude = '^\.idea/'
+
+[[repos]]
+repo = "builtin"
+hooks = [
+  { id = "trailing-whitespace" },
+  { id = "end-of-file-fixer" },
+  { id = "check-yaml" },
+]
+
+[[repos]]
+repo = "local"
+hooks = [
+  # https://pre-commit.com/
+  # Use --force-exclude, because prek might add files as args that are excluded
+  # by ruff's config.
+  { id = "ruff-check", name = "ruff check", entry = "ruff check --force-exclude --fix", language = "system", require_serial = true, types_or = ["python", "pyi"] },
+  { id = "ruff-format", name = "ruff format", entry = "ruff format --force-exclude", language = "system", require_serial = true, types_or = ["python", "pyi"] },
+  { id = "dprint", name = "dprint fmt", entry = "dprint fmt --allow-no-files", language = "system", files = 'compose.*\.ya?ml$' },
+  # { id = "ast-grep", name = "ast-grep scan", entry = "ast-grep scan --color=never --report-style=short", language = "system", files = '.*\.py' },
+]
