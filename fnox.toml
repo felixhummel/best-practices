@@ -1,0 +1,8 @@
+default_provider = "age"
+
+[providers.age]
+type = "age"
+key_file = "~/.ssh/id_ed25519"
+recipients = [
+  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIALqmGSMckClFsFYhRBp7+0u/Zr01kvRGr6ZfPTbUe94 felix@locutus",
+]
