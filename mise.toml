@@ -4,6 +4,7 @@ _.python.venv = { path = ".venv" }
 FNOX_AGE_KEY_FILE = "{{ env.HOME }}/.ssh/id_ed25519"
 
 [tools]
+"github:ast-grep/ast-grep" = "latest"
 "github:j178/prek" = "latest"
 dprint = "latest"
 taplo = "latest"
